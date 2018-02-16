@@ -7,7 +7,7 @@ import org.junit.Test;
 
 public class ReviewTest {
 
-	private Review review = new Review(23L, "Title", "Category", "Content");
+	private Review review = new Review(23L, "Title", "image.jpg", "Category", "Content");
 
 	@Test
 	public void getReviewId() {
@@ -31,5 +31,11 @@ public class ReviewTest {
 	public void getReviewDescription() {
 		String check = review.getDescription();
 		assertThat(check, is("Content"));
+	}
+	
+	@Test
+	public void getImage() {
+		String check = review.getImage();
+		assertThat(check, is("image.jpg"));
 	}
 }
