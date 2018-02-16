@@ -14,7 +14,7 @@
 	<ul th:each="review: ${reviews}">
 		<li>
 			<a th:href="@{/review(ReviewId=${review.ReviewId})}" th:text="${review.ReviewTitle}" />
-			<span th:text="': ' + ${review.description}" />
+			<span th:text="': ' + ${review.category}" />
 		</li>
 	</ul>
 
