@@ -11,10 +11,11 @@ import org.junit.Test;
 public class ReviewRepositoryTest {
 
 	private long firstReviewId = 23L;
-	private Review firstReview = new Review(firstReviewId, "Title", "Category", "Content");
+	private Review firstReview = new Review(firstReviewId, "Title", "descript", "image", "url", "Category", "Content");
 
 	private long secondReviewId = 24L;
-	private Review secondReview = new Review(secondReviewId, "Title2", "Category2", "Content2");
+	private Review secondReview = new Review(secondReviewId, "Title2", "descript", "image", "url", "Category2",
+			"Content2");
 
 	@Test
 	public void shouldFindFirstReview() {

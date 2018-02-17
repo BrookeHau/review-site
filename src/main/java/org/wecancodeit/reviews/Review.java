@@ -8,10 +8,12 @@ public class Review {
 	private String content;
 	private String image;
 	private String url;
+	private String miniDescript;
 
-	public Review(long reviewId, String title, String image, String url, String category, String content) {
+	public Review(long reviewId, String title, String miniDescript, String image, String url, String category, String content) {
 		this.image = image;
 		this.url = url;
+		this.miniDescript = miniDescript;
 		this.reviewId = reviewId;
 		this.title = title;
 		this.category = category;
@@ -41,6 +43,10 @@ public class Review {
 
 	public String getUrl() {
 		return url;
+	}
+	
+	public String getMiniDescript() {
+		return miniDescript;
 	}
 
 }

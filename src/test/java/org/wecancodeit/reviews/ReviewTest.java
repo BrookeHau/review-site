@@ -7,7 +7,7 @@ import org.junit.Test;
 
 public class ReviewTest {
 
-	private Review review = new Review(23L, "Title", "image.jpg", "url", "Category", "Content");
+	private Review review = new Review(23L, "Title", "descript", "image.jpg", "url", "Category", "Content");
 
 	@Test
 	public void getReviewId() {
@@ -43,5 +43,11 @@ public class ReviewTest {
 	public void getUrl() {
 		String check = review.getUrl();
 		assertThat(check, is("url"));
+	}
+
+	@Test
+	public void getminiDescript() {
+		String check = review.getMiniDescript();
+		assertThat(check, is("descript"));
 	}
 }
