@@ -6,18 +6,22 @@
 <title>Fitness Reviews</title>
 </head>
 
-<body style="background-color: #FBFCFC;">
+<body
+	style="background-color: #f4f4f4; font-family: Calibri Light; margin: 50px; border-spacing: 10px; border: #85959E 4px double">
 	<header>
 		<center>
 			<h1>Reviews</h1>
 		</center>
 	</header>
-	<h2>Work out Classes</h2>
+	<h2 style="text-decoration: underline; padding: 12px;">Work out
+		Classes</h2>
 	<ul th:each="review: ${reviews}">
-		<li><a th:href="@{/review(ReviewId=${review.ReviewId})}"
+		<li style="font-size: 18px;"><a
+			th:href="@{/review(ReviewId=${review.ReviewId})}"
 			th:text="${review.ReviewTitle}">Title</a> <span
 			th:text="': ' +${review.MiniDescript}">mini description</span></li>
 	</ul>
+
 
 
 </body>
